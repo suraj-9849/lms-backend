@@ -23,7 +23,7 @@ app.use(
 
 app.use('/api/upload-video', uploadRouter);
 
-app.get('/', (req, res) => {
+app.get('/', (req: any, res: { send: (arg0: string) => void; }) => {
   res.send('Video Upload API is running');
 });
 
